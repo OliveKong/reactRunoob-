@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../build/react.min.js"></script>
+	<script type="text/javascript" src="../build/react-dom.min.js"></script>
+	<script type="text/javascript" src="../build/browser.min.js"></script>
+	<!-- <script src="https://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+	   <script src="https://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
+	   <script src="https://static.runoob.com/assets/react/browser.min.js"></script> -->
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+		var i=1;
+		
+		var arr=[
+			<h2>菜鸟教程</h2>,
+			<h3>学的不仅是技术，更是梦想！</h3>
+		]
+		ReactDOM.render(
+			<div>
+				<h1>hello world</h1>
+				<p>{i==1?'true':'false'}</p>
+				<p>注释需要写在花括号中，实例如下：</p>
+				{/*注释...*/}
+				<p>JSX 允许在模板中插入数组，数组会自动展开所有成员：</p>
+				<p>{arr}</p>
+			</div>,
+			document.getElementById("example")
+		);
+	</script>
+</body>
+</html>
