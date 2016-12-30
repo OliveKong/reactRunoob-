@@ -18,7 +18,7 @@
 		<div id="demo1"></div>
 	</div>
 	 <script type="text/babel">
-      var LikeButton = React.createClass({
+      /*var LikeButton = React.createClass({
         getInitialState: function() {
           return {liked: false};
         },
@@ -33,8 +33,24 @@
             </p>
           );
         }
-      });
-
+      });*/
+        var LikeButton=React.createClass({
+            getInitialState:function(){
+                return {liked:false}
+            },
+            handleClick:function(){
+                this.setState({liked:!this.state.liked});
+            },
+            render:function(){
+                var text=this.state.liked?'喜欢':'不喜欢';
+                return(
+                    <p onClick={this.handleClick}>
+                        你<b>{text}</b>我。点我切换状态
+                    </p>
+                )
+            }
+        });
+        /*return后，跟着{}返回的是数据，（）返回的是组件*/
       ReactDOM.render(
         <LikeButton />,
         document.getElementById('demo1')
