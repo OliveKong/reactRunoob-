@@ -17,7 +17,8 @@
 	替换属性replaceProps<br><br>
 	强制更新：forceUpdate<br><br>
 	获取DOM节点：findDOMNode<br><br>
-	判断组件挂载状态：isMounted</p>
+	判断组件挂载状态：isMounted
+	</p>
 	<div>
 		设置状态:setState<br><br>
 		setState(object nextState[, function callback])<br><br>
@@ -29,6 +30,7 @@
 		不能在组件内部通过this.state修改状态，因为该状态会在调用setState()后被替换。<br><br>
 		setState()并不会立即改变this.state，而是创建一个即将处理的state。setState()<br><br>并不一定是同步的，为了提升性能React会批量执行state和DOM渲染。<br><br>
 		setState()总是会触发一次组件重绘，除非在shouldComponentUpdate()中实现了一些条件渲染逻辑。<br><br>
+		<div id="setState"></div>
 	</div>
 </body>
 </html>
